@@ -1,13 +1,14 @@
 (function () {
-  
+  //1_1.1
   document.getElementById("ex1_button").addEventListener("click", function () {
     var tab=[];
     for(let i = 0; i < 10;i++){
     tab.push(i);
     }
-    document.getElementById("ex1_content").innerHTML = tab;
+    document.getElementById("ex1_content").textContent = tab;
     })
-    document.getElementById("ex2_text").addEventListener("input", function ()
+  //1_1.2
+  document.getElementById("ex2_text").addEventListener("input", function ()
     {
       var phone = document.getElementById("ex2_text").value; 
       var regex = /[a-zA-Z]/;
